@@ -20,15 +20,15 @@ public class BoardEntity {
     @EqualsAndHashCode.Exclude
     private List<BoardColumnEntity> boardColumns = new ArrayList<>();
 
-    public BoardColumnEntity getInitialColumn(){
+    public BoardColumnEntity getInitialColumn() {
         return getFilteredColumn(bc -> bc.getKind().equals(INITIAL));
     }
 
-    public BoardColumnEntity getCancelColumn(){
+    public BoardColumnEntity getCancelColumn() {
         return getFilteredColumn(bc -> bc.getKind().equals(CANCEL));
     }
 
-    private BoardColumnEntity getFilteredColumn(Predicate<BoardColumnEntity> filter){
+    private BoardColumnEntity getFilteredColumn(Predicate<BoardColumnEntity> filter) {
         return boardColumns.stream()
                 .filter(filter)
                 .findFirst().orElseThrow();

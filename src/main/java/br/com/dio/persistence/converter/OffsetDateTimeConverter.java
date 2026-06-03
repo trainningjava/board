@@ -12,11 +12,11 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor(access = PRIVATE)
 public final class OffsetDateTimeConverter {
 
-    public static OffsetDateTime toOffsetDateTime(final Timestamp value){
+    public static OffsetDateTime toOffsetDateTime(final Timestamp value) {
         return nonNull(value) ? OffsetDateTime.ofInstant(value.toInstant(), UTC) : null;
     }
 
-    public static Timestamp toTimestamp(final OffsetDateTime value){
+    public static Timestamp toTimestamp(final OffsetDateTime value) {
         return nonNull(value) ? Timestamp.valueOf(value.atZoneSameInstant(UTC).toLocalDateTime()) : null;
     }
 

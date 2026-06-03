@@ -178,7 +178,7 @@ Concluído
 ### Subir banco de dados
 
 ```bash
-docker compose up -d
+docker-compose up -d
 ```
 
 ### Verificar containers
@@ -190,13 +190,13 @@ docker ps
 ### Parar banco
 
 ```bash
-docker compose down
+docker-compose down
 ```
 
 ### Remover banco e dados
 
 ```bash
-docker compose down -v
+docker-compose down -v
 ```
 
 Após subir o banco, execute a aplicação normalmente:

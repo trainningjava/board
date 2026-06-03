@@ -19,16 +19,16 @@ public class MigrationStrategy {
 
     private final Connection connection;
 
-    public void executeMigration(){
+    public void executeMigration() {
         var originalOut = System.out;
         var originalErr = System.err;
-        try(var fos = new FileOutputStream("liquibase.log")){
+        try (var fos = new FileOutputStream("liquibase.log")) {
             System.setOut(new PrintStream(fos));
             System.setErr(new PrintStream(fos));
-            try(
+            try (
                     var connection = getConnection();
                     var jdbcConnection = new JdbcConnection(connection);
-            ){
+            ) {
                 var liquibase = new Liquibase(
                         "/db/changelog/db.changelog-master.yml",
                         new ClassLoaderResourceAccessor(),
@@ -38,7 +38,7 @@ public class MigrationStrategy {
                 e.printStackTrace();
                 System.setErr(originalErr);
             }
-        } catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
         } finally {
             System.setOut(originalOut);
