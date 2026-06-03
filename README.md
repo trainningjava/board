@@ -2,6 +2,28 @@
 
 Sistema de gerenciamento de tarefas inspirado no método Kanban, desenvolvido em Java para controle de boards, colunas e cards através de interface de linha de comando (CLI).
 
+## Índice
+
+* [Objetivo](#objetivo)
+* [Funcionalidades](#funcionalidades)
+   * [Gerenciamento de Boards](#gerenciamento-de-boards)
+   * [Gerenciamento de Colunas](#gerenciamento-de-colunas)
+   * [Gerenciamento de Cards](#gerenciamento-de-cards)
+   * [Regras de Negócio](#regras-de-negócio)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Estrutura do Projeto](#estrutura-do-projeto)
+   * [Responsabilidades](#responsabilidades)
+* [Como Executar](#como-executar)
+   * [Pré-requisitos](#pré-requisitos)
+   * [Configuração](#configuração)
+* [Fluxo de Utilização](#fluxo-de-utilização)
+   * [Menu Principal](#menu-principal)
+   * [Menu do Board](#menu-do-board)
+* [Exemplo de Fluxo](#exemplo-de-fluxo)
+* [Executando com Docker](#executando-com-docker)
+* [Configuração no IntelliJ IDEA (Opcional)](#configuração-no-intellij-idea-opcional)
+* [Autor](#autor)
+
 ## Objetivo
 
 O projeto permite criar e gerenciar boards personalizados, possibilitando o acompanhamento do fluxo de trabalho através da movimentação de cards entre colunas.
@@ -204,6 +226,18 @@ Após subir o banco, execute a aplicação normalmente:
 ```bash
 ./gradlew run
 ```
+---
+
+### Configuração no IntelliJ IDEA (Opcional)
+
+Se você estiver utilizando o IntelliJ IDEA, para garantir que o projeto execute corretamente e utilize o potencial da IDE, recomenda-se alterar a configuração do Gradle:
+
+1. Abra as configurações: `Settings` (ou `Preferences` no macOS).
+2. Navegue até: **Build, Execution, Deployment** > **Build Tools** > **Gradle**.
+3. Altere as seguintes opções para **IntelliJ IDEA**:
+    * **Build and run using:** IntelliJ IDEA
+    * **Run tests using:** IntelliJ IDEA
+
 ---
 
 ## Autor
