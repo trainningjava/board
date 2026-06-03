@@ -173,6 +173,37 @@ Code Review
 Concluído
 ```
 
+## Executando com Docker
+
+### Subir banco de dados
+
+```bash
+docker compose up -d
+```
+
+### Verificar containers
+
+```bash
+docker ps
+```
+
+### Parar banco
+
+```bash
+docker compose down
+```
+
+### Remover banco e dados
+
+```bash
+docker compose down -v
+```
+
+Após subir o banco, execute a aplicação normalmente:
+
+```bash
+./gradlew run
+```
 ---
 
 ## Autor
