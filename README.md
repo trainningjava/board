@@ -24,6 +24,10 @@ Sistema de gerenciamento de tarefas inspirado no método Kanban, desenvolvido em
 * [Configuração no IntelliJ IDEA (Opcional)](#configuração-no-intellij-idea-opcional)
 * [Autor](#autor)
 
+## 🎓 Formação e Contexto do Projeto
+
+Este repositório foi desenvolvido durante minha participação no bootcamp Almaviva Solutions - Back-end com Java & QA, promovido pela DIO (Digital Innovation One).
+
 ## Objetivo
 
 O projeto permite criar e gerenciar boards personalizados, possibilitando o acompanhamento do fluxo de trabalho através da movimentação de cards entre colunas.
